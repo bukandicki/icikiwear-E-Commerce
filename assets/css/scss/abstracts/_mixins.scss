@@ -1,0 +1,67 @@
+// extends
+
+%a-and-button-properties
+{
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+// mixin
+
+@mixin textStyling ($font-family, $font-size, $font-weight, $font-letter-spacing, $font-color)
+{
+    font-family: $font-family !important;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $font-letter-spacing;
+    color: $font-color !important;
+}
+
+@mixin borderAndBoxShadowStyling ($component-border, $component-box-shadow)
+{
+    border: $component-border;
+    box-shadow: $component-box-shadow;
+}
+
+@mixin componentPosition ($component-position, $component-position-top, $component-position-right, $component-position-bottom, $component-position-left)
+{
+    position: $component-position;
+    top: $component-position-top;
+    right: $component-position-right;
+    bottom: $component-position-bottom;
+    left: $component-position-left;
+}
+
+@mixin componentStyling ($component-display, $component-width, $component-height, $component-background, $component-padding)
+{
+    display: $component-display;
+    width: $component-width;
+    height: $component-height;
+    background-color: $component-background;
+    padding: $component-padding;
+}
+
+@mixin shineEffect ( $content, $zIndex, $transition, $transform )
+{
+
+    content: $content;
+    z-index: $zIndex;
+    transition: $transition;
+    transform: $transform;
+    @include componentPosition (absolute, null, null, null, null);
+    @include componentStyling (block, 300%, 200%, rgba($white-color, .3), null);
+    
+}
+
+@mixin panel ( $justifyContent, $borderLeft, $borderRight ) {
+    padding: 0;
+    justify-content: $justifyContent;
+
+    .panel-item {
+        border-left: $borderLeft;
+        border-right: $borderRight;
+    }
+}

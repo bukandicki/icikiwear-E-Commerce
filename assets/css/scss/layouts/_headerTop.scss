@@ -1,0 +1,59 @@
+.header-top
+{
+    text-align: center;
+    @include componentStyling ( null, 100%, null, $danger-color, .5em );
+    @include textStyling ( $primary-font, .7em, 800, .2em, $white-color );
+}
+
+.header-panel
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #eee;
+
+    .header-panel-item
+    {
+        display: flex;
+        
+        .panel-item
+        {
+            .panel-link, span
+            {
+                text-transform: uppercase;
+                @include textStyling ($primary-font, .7em, 800, .1em, $iron-color);
+                @include componentStyling (block, null, null, null, 1.3em);
+            }
+            
+        }
+        
+    }
+    
+    .panel-promotion-text
+    {
+        @include textStyling ($primary-font, .7em, 800, .1em, $warm-color);
+        a
+        {
+            @include textStyling (null, null, null, null, $warm-color);
+            border-bottom: dotted 1px $warm-color;
+        }
+    }
+
+    .panel-right
+    {
+        @include panel (flex-end, solid 1px #eee, null);
+    }
+
+    .panel-left
+    {
+        @include panel (flex-start, null, solid 1px #eee);
+    }
+}
+
+.header-logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include componentStyling ( null, 100%, null, $white-color, 1em );
+}

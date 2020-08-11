@@ -1,0 +1,52 @@
+.items-banner-top-product {
+    position: relative;
+    height: 230px;
+    background-color: $default-color;
+    overflow: hidden;
+
+    img
+    {
+        width: 100%;
+        transition: all ease-in-out 250ms;
+    }
+    
+    a
+    {
+        transform: translate(-170px, -50%);
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 1;
+        transition: all ease-in-out 250ms;
+        @include componentPosition (absolute, null, null, 0%, 50%);
+        @include borderAndBoxShadowStyling ( solid 1.5px $iron-color, null );
+        @include textStyling ($primary-font, 1em, 900, .05em, $iron-color);
+        @include componentStyling ( block, null, null, transparent, 1em );
+        
+        &:hover
+        {
+            @include componentStyling (block, null, null, rgba($iron-color, 1), 1em);
+            @include textStyling ($primary-font, 1em, 900, .05em, $white-color);
+            @include borderAndBoxShadowStyling ( solid 1.5px $iron-color, null );
+        }
+    }
+    
+    &::before
+    {
+        @include shineEffect('', 1, all ease-in-out 300ms, translate(-100%, -10%) rotate(-45deg));
+    }
+
+    &:hover
+    {
+        > img
+        {
+            transform: scale(1.05);
+        }
+
+        &::before
+        {
+            transform: translate(100%, -10%) rotate(-45deg);
+        }
+
+
+    }
+}

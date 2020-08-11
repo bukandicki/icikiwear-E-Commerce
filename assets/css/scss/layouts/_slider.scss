@@ -1,0 +1,13 @@
+.slider-container
+{
+    div
+    {
+        outline: none;
+        @include componentStyling ( null, 100%, 100vh, null, null );
+
+            img
+            {
+                height: 100%;
+            }
+    }
+}

@@ -1,0 +1,100 @@
+nav
+{
+    @include componentPosition ( relative, null, null, null, null );
+    @include componentStyling ( null, auto, auto, $white-color, null );
+    @include borderAndBoxShadowStyling (none,
+        (
+            0 1px 2px rgba(0, 0, 0, 0.02),
+            0 2px 4px rgba(0, 0, 0, 0.02),
+            0 4px 8px rgba(0, 0, 0, 0.02),
+            0 8px 16px rgba(0, 0, 0, 0.02)
+        )
+    );
+}
+
+.nav-link
+{
+    text-transform: uppercase;
+    @include textStyling ( $primary-font, .82em, 800, .1em, $iron-color );
+    
+    &:hover:not(.active, .nav-login-link)
+    {
+        @include textStyling ( $primary-font, .82em, 800, .1em, $warm-color );
+    }
+}
+
+.active
+{
+    @include textStyling ( $primary-font, .82em, 800, .1em, $warm-color );
+    
+    // &:after
+    // {
+    //     content: '';
+    //     @include componentPosition ( relative, calc(100% - 90%), null, null, null );
+    //     @include componentStyling ( block, 85%, 1px, $warm-color, null );
+    //     margin: auto;
+    // }
+}
+
+.main-navbar
+{
+    a:not(:last-child)
+    {
+        margin-right: 2em;
+    }
+}
+
+.navbar-right
+{
+    a:not(:last-child)
+    {
+        margin-right: .5em;
+    }
+    
+    button:not(:last-child)
+    {
+        margin-right: 1em;
+    }
+}
+
+.navbar-right
+{
+    button
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        @include borderAndBoxShadowStyling ( none, none );
+        @include textStyling ( $primary-font, 1.25em, 600, null, $iron-color );
+
+            span
+            {
+                line-height: 25px;
+                margin-left: .5em;
+                @include componentStyling ( inline-block, 25px, 25px, $warm-color, null );
+                @include textStyling ( $secondary-font, calc(100% - 40%), 600, null, $white-color );
+            }
+    }
+}
+
+.navbar-brand
+{
+    text-align: center;
+
+    img
+    {
+        height: 35px;
+    }
+}
+
+.nav-login-link
+{
+    border: solid 1px $primary-color;
+    color: $primary-color !important;
+    &:hover
+    {
+        background: $primary-color;
+        color: $white-color !important;
+    }
+}

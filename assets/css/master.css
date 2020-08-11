@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+a {
+  text-decoration: none !important;
+}
+
+.header-top {
+  text-align: center;
+  width: 100%;
+  background-color: #F85A53;
+  padding: 0.5em;
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.7em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #FFFFFF !important;
+}
+
+.header-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px #eee;
+}
+
+.header-panel .header-panel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-panel .header-panel-item .panel-item .panel-link, .header-panel .header-panel-item .panel-item span {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.7em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #2F3C4E !important;
+  display: block;
+  padding: 1.3em;
+}
+
+.header-panel .panel-promotion-text {
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.7em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #FE824C !important;
+}
+
+.header-panel .panel-promotion-text a {
+  font-family: !important;
+  color: #FE824C !important;
+  border-bottom: dotted 1px #FE824C;
+}
+
+.header-panel .panel-right {
+  padding: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-panel .panel-right .panel-item {
+  border-left: solid 1px #eee;
+}
+
+.header-panel .panel-left {
+  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header-panel .panel-left .panel-item {
+  border-right: solid 1px #eee;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+nav {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #FFFFFF;
+  border: none;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02);
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.82em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #2F3C4E !important;
+}
+
+.nav-link:hover {
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.82em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #FE824C !important;
+}
+
+.active {
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.82em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #FE824C !important;
+}
+
+.main-navbar a:not(:last-child) {
+  margin-right: 2em;
+}
+
+.navbar-right a:not(:last-child) {
+  margin-right: .5em;
+}
+
+.navbar-right button:not(:last-child) {
+  margin-right: 1em;
+}
+
+.navbar-right button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #2F3C4E !important;
+}
+
+.navbar-right button span {
+  line-height: 25px;
+  margin-left: .5em;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #FE824C;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: calc(100% - 40%);
+  font-weight: 600;
+  color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-brand img {
+  height: 35px;
+}
+
+.nav-login-link {
+  border: solid 1px #3A5EFF;
+  color: #3A5EFF !important;
+}
+
+.nav-login-link:hover {
+  background: #3A5EFF;
+  color: #FFFFFF !important;
+}
+
+.slider-container div {
+  outline: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-container div img {
+  height: 100%;
+}
+
+.items-banner-top-product {
+  position: relative;
+  height: 230px;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.items-banner-top-product img {
+  width: 100%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.items-banner-top-product a {
+  -webkit-transform: translate(-170px, -50%);
+          transform: translate(-170px, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  border: solid 1.5px #2F3C4E;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #2F3C4E !important;
+  display: block;
+  background-color: transparent;
+  padding: 1em;
+}
+
+.items-banner-top-product a:hover {
+  display: block;
+  background-color: #2f3c4e;
+  padding: 1em;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #FFFFFF !important;
+  border: solid 1.5px #2F3C4E;
+}
+
+.items-banner-top-product::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-100%, -10%) rotate(-45deg);
+          transform: translate(-100%, -10%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.items-banner-top-product:hover > img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.items-banner-top-product:hover::before {
+  -webkit-transform: translate(100%, -10%) rotate(-45deg);
+          transform: translate(100%, -10%) rotate(-45deg);
+}
+
+.banner-promotion {
+  height: 100vh;
+}
+
+.wrapper-banner {
+  width: 90%;
+  margin: auto;
+}
+
+.banner-container {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr (5fr)[2];
+      grid-template-columns: 5fr 3fr repeat(2, 5fr);
+  -ms-grid-rows: (8fr)[2] (1fr)[3];
+      grid-template-rows: repeat(2, 8fr) repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-promotion-1 {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 255px;
+  background-color: #f6f6f6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.banner-promotion-1::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-100%, -10%) rotate(-45deg);
+          transform: translate(-100%, -10%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-promotion-1:hover::before {
+  -webkit-transform: translate(100%, -10%) rotate(-45deg);
+          transform: translate(100%, -10%) rotate(-45deg);
+}
+
+.banner-promotion-2 {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 255px;
+  background-color: #f6f6f6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.banner-promotion-2::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-100%, -30%) rotate(-45deg);
+          transform: translate(-100%, -30%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-promotion-2:hover::before {
+  -webkit-transform: translate(100%, -30%) rotate(-45deg);
+          transform: translate(100%, -30%) rotate(-45deg);
+}
+
+.banner-promotion-3 {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 255px;
+  background-color: #f6f6f6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.banner-promotion-3::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-100%, -10%) rotate(-45deg);
+          transform: translate(-100%, -10%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-promotion-3:hover::before {
+  -webkit-transform: translate(100%, -10%) rotate(-45deg);
+          transform: translate(100%, -10%) rotate(-45deg);
+}
+
+.banner-promotion-4 {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 255px;
+  background-color: #f6f6f6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.banner-promotion-4::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-100%, -30%) rotate(-45deg);
+          transform: translate(-100%, -30%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-promotion-4:hover::before {
+  -webkit-transform: translate(100%, -30%) rotate(-45deg);
+          transform: translate(100%, -30%) rotate(-45deg);
+}
+
+.banner-promotion-5 {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-color: #f6f6f6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 3 / 5;
+}
+
+.banner-promotion-5::before {
+  content: "";
+  z-index: 1;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transform: translate(-120%, -60%) rotate(-45deg);
+          transform: translate(-120%, -60%) rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 300%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-promotion-5:hover::before {
+  -webkit-transform: translate(100%, 30%) rotate(-45deg);
+          transform: translate(100%, 30%) rotate(-45deg);
+}
+/*# sourceMappingURL=master.css.map */

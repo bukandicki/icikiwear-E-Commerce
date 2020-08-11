@@ -1,0 +1,17 @@
+a {
+    @extend %a-and-button-properties;
+
+    &:hover {
+        @extend %a-and-button-properties;
+    }
+
+    &:focus {
+        @extend %a-and-button-properties;
+    }
+}
+
+button {
+    &:focus {
+        @extend %a-and-button-properties;
+    }
+}
